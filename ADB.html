@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+var d="33";
+$(document).ready(function(){
+
+	$("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+    
+    $("p").click(function(){
+        $(this).hide();
+        d=$('.go').text();
+        $("#My_url").text(d);
+        // $("#My_url").text(function(i, origText){
+        //     return "Old text: ";
+        // });
+    });
+});
+   
+</script>
+
+<style>
+body{
+
+}
+#nut{
+    width:80%;
+    margin: 0 auto;
+    border-style: solid;
+    padding: 10px 30px 180px 30px;
+    border-bottom:none;
+}
+#ADB{
+    width:80%;
+    margin: 0 auto;
+    border-style: solid;
+    padding: 30px 30px 250px 30px;
+}
+#panel, #flip {
+    padding: 5px;
+    width:300px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: solid 2px #000000;
+    float:left;
+}
+
+#panel2, #flip2 {
+    padding: 5px;
+    width:300px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: solid 2px #000000;
+    float: right;
+}
+
+/*#panel2 {
+    padding: 50px;
+    display: none;
+}*/
+
+#file{
+	height: 300px;
+	float:center;
+	text-align: center;
+	background-color: #FFFFFF;
+    border: solid 2px #000000;
+    vertical-align: middle;
+}
+#file img{
+     height: auto;
+}
+
+
+#Le{
+	float: left;
+	
+	text-align: center;
+}
+
+#Ri{
+	float: right;
+	
+	text-align: center;
+ 
+}
+#My_url{
+    padding: 5px;
+    width:300px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: solid 2px #000000;
+    float: right;
+}
+
+</style>
+</head>
+
+<body>
+<div id="nut">
+    
+        <div id="Le">
+            <img width="263" height="180" align="middle" src="LogoFactory.jpg">
+        </div>
+        <div id="Ri">
+            <img width="150" height="150" align="middle" src="url_plus.png">
+        </div>
+</div>
+<div id="ADB">
+
+
+    <div id="flip">my url</div>
+    <div id="My_url">dddd</div>
+    <br><br>
+
+    <div id="panel">
+    	<p id=url_my class="go">Hello world!</p>
+    	<p id=url_my class="go">hi world!</p>
+        <p id=url_my class="go">he world!</p>
+        <p id=url_my class="go">ha world!</p>
+    </div>
+    <br><br>
+
+    <div id="flip2">my paseg</div>
+    <br>
+    <div id="panel2">
+        <p>my paseg</p>
+        <p>uo paseg</p>
+        <p>yo paseg</p>
+        <p>qw paseg</p>
+    </div>
+    <br><br>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="file">
+        <img width="220" height="220" align="middle" src="file_plus.png">
+    </div>
+    <br>
+
+    <div id="Le">
+        <img width="220" height="220" align="middle" src="clear.png">
+    </div>
+    <div id="Ri">
+        <img width="220" height="220" align="middle" src="save.png">
+    </div>
+</div>
+</body>
+</html>
