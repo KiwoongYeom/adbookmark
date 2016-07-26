@@ -15,12 +15,8 @@ $(document).ready(function(){
     });
     
     $("p").click(function(){
-        $(this).hide();
         d=$('.go').text();
         $("#My_url").text(d);
-        // $("#My_url").text(function(i, origText){
-        //     return "Old text: ";
-        // });
     });
 });
    
@@ -60,11 +56,6 @@ body{
     border: solid 2px #000000;
     float: right;
 }
-
-/*#panel2 {
-    padding: 50px;
-    display: none;
-}*/
 
 #file{
 	height: 300px;
