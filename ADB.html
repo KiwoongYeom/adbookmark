@@ -6,40 +6,37 @@
 var d="140";
 $(document).ready(function(){
 
-	$("#flip").click(function(){
-        $("#panel").slideToggle("slow");
+	$(".flip").click(function(){
+        $(".panel").slideToggle("slow");
     });
 
-    $("#flip2").click(function(){
-        $("#panel2").slideToggle("slow");
+    $(".flip2").click(function(){
+        $(".panel2").slideToggle("slow");
     });
     
     $("p").click(function(){
-        d=$('.go').text();
-        $("#My_url").text(d);
+        d=$('.url_my').text();
+        $(".My_url").text(d);
     });
 });
    
 </script>
 
 <style>
-body{
-
-}
-#nut{
+.nut{
     width:80%;
     margin: 0 auto;
     border-style: solid;
     padding: 10px 30px 180px 30px;
     border-bottom:none;
 }
-#ADB{
+.ADB{
     width:80%;
     margin: 0 auto;
     border-style: solid;
     padding: 30px 30px 250px 30px;
 }
-#panel, #flip {
+.panel, .flip {
     padding: 5px;
     width:300px;
     text-align: center;
@@ -48,7 +45,7 @@ body{
     float:left;
 }
 
-#panel2, #flip2 {
+.panel2, .flip2 {
     padding: 5px;
     width:300px;
     text-align: center;
@@ -57,7 +54,7 @@ body{
     float: right;
 }
 
-#file{
+.file{
 	height: 300px;
 	float:center;
 	text-align: center;
@@ -65,24 +62,24 @@ body{
     border: solid 2px #000000;
     vertical-align: middle;
 }
-#file img{
+.file img{
      height: auto;
 }
 
 
-#Le{
+.Le{
 	float: left;
 	
 	text-align: center;
 }
 
-#Ri{
+.Ri{
 	float: right;
 	
 	text-align: center;
  
 }
-#My_url{
+.My_url{
     padding: 5px;
     width:300px;
     text-align: center;
@@ -95,33 +92,33 @@ body{
 </head>
 
 <body>
-<div id="nut">
+<div class="nut">
     
-        <div id="Le">
+        <div class="Le">
             <img width="263" height="180" align="middle" src="LogoFactory.jpg">
         </div>
-        <div id="Ri">
+        <div class="Ri">
             <img width="150" height="150" align="middle" src="url_plus.png">
         </div>
 </div>
-<div id="ADB">
+<div class="ADB">
 
 
-    <div id="flip">my url</div>
-    <div id="My_url">dddd</div>
+    <div class="flip">my url</div>
+    <div class="My_url">dddd</div>
     <br><br>
 
-    <div id="panel">
-    	<p id=url_my class="go">Hello world!</p>
-    	<p id=url_my class="go">hi world!</p>
-        <p id=url_my class="go">he world!</p>
-        <p id=url_my class="go">ha world!</p>
+    <div class="panel">
+    	<p class="url_my">Hello world!</p>
+    	<p class="url_my">hi world!</p>
+        <p class="url_my">he world!</p>
+        <p class="url_my">ha world!</p>
     </div>
     <br><br>
 
-    <div id="flip2">my paseg</div>
+    <div class="flip2">my paseg</div>
     <br>
-    <div id="panel2">
+    <div class="panel2">
         <p>my paseg</p>
         <p>uo paseg</p>
         <p>yo paseg</p>
@@ -131,15 +128,15 @@ body{
 
     <br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <div id="file">
+    <div class="file">
         <img width="220" height="220" align="middle" src="file_plus.png">
     </div>
     <br>
 
-    <div id="Le">
+    <div class="Le">
         <img width="220" height="220" align="middle" src="clear.png">
     </div>
-    <div id="Ri">
+    <div class="Ri">
         <img width="220" height="220" align="middle" src="save.png">
     </div>
 </div>
