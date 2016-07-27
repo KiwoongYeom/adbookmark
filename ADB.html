@@ -48,10 +48,13 @@ $(document).ready(function(){
     $(".flip2").click(function(){
         $(".panel2").slideToggle("slow");
     });
-    
+     
+
     $("p").click(function(){
         //클릭 시 save_url로 지정
-        d=$('.url_my').text();
+        alert("select index : "+$(this).index("p") );
+        //이걸 이용해서 모든 p값을 db나 배열에 지정하고 
+        //index로 찾는 형식으로 제작?
         $(".Save_url").text(d);
     });
 });
@@ -153,7 +156,7 @@ $(document).ready(function(){
     <br><br>
 
     <div class="flip2">my paseg</div>
-    <br>
+    <br><br>
     <div class="panel2">
         <p class="my_url">my paseg</p>
         <p class="my_url">uo paseg</p>
